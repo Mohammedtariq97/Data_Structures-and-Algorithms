@@ -4,7 +4,6 @@ public class App3 {
 
 	public static void main(String[] args) {
 		DoublyLinkedList myList = new DoublyLinkedList();
-		
 		myList.insertFirst(20);
 		myList.insertFirst(40);
 		myList.insertFirst(60);
@@ -17,5 +16,4 @@ public class App3 {
 		myList.displayForward();
 		myList.displayBackward();
 	}
-
 }
