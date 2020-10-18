@@ -2,28 +2,22 @@ package ds.linkedlist;
 
 public class singlyLinkedList {
 	private Node first;
-
 	public singlyLinkedList() {
-
 	}
-
 	public boolean isEmpty() {
 		return (first == null);
 	}
-
 	public void insertFirst(int data) {
 		Node newNode = new Node();
 		newNode.data = data;
 		newNode.next = first;
 		first = newNode;
 	}
-
 	public Node deleteFirst() {
 		Node temp = first;
 		first = first.next;
 		return temp;
 	}
-
 	public void displayList() {
 		System.out.println("Displaying list:- ");
 		Node current = first;
@@ -33,7 +27,6 @@ public class singlyLinkedList {
 		}
 		System.out.println();
 	}
-
 	public void insertLast(int data) {
 		Node current = first;
 		while (current.next != null) {
@@ -43,5 +36,4 @@ public class singlyLinkedList {
 		newNode.data = data;
 		current.next = newNode;
 	}
-
 }

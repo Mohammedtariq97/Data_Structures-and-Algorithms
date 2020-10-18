@@ -8,7 +8,6 @@ public class queue {
 	private int rear;
 	private int nitems;
 	public queue(int size) {
-		
 		this.maxSize = size;
 		this.queArray = new long[size];
 		this.front = 0;
@@ -23,7 +22,7 @@ public class queue {
 		queArray[rear] = j;
 		nitems++;
 	}
-	
+
 	public void remove() {
 		long temp = queArray[front];
 		front++;
@@ -32,25 +31,22 @@ public class queue {
 		}
 		nitems--;
 	}
-	
+
 	public long peekfront() {
-		
 		return queArray[front];
 	}
-	
+
 	public boolean isEmpty() {
-		return (nitems == 0);	
+		return (nitems == 0);
 	}
-	
+
 	public boolean isFull() {
-		return (nitems == maxSize);	
+		return (nitems == maxSize);
 	}
-	
+
 	public void view() {
-		
 		for(int i=0; i< queArray.length; i++) {
 			System.out.print(queArray[i] + " ");
 		}
 	}
-	
 }

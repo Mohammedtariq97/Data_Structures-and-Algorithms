@@ -4,7 +4,7 @@ public class stack {
 	private int maxSize;
 	private char[] stackArray;
 	private int top;
-	
+
 	public stack(int size) {
 		this.maxSize = size;
 		this.stackArray = new char[maxSize];
@@ -27,15 +27,14 @@ public class stack {
 		top--;
 		return stackArray[old_value];
 		}
-	}	
+	}
 	public char peak() {
 		return stackArray[top];
 	}
 	public boolean isEmpty() {
-		return(top == -1);		
+		return(top == -1);
 	}
 	public boolean isFull() {
-		return (maxSize-1 == top);
-		
+		return (maxSize-1 == top);	
 	}
 }

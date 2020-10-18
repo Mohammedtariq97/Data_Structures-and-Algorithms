@@ -7,9 +7,7 @@ import java.math.*;
 import java.util.regex.*;
 
 public class stackproblem2 {
-
 	public static void main(String[] args) {
-
 		Scanner in = new Scanner(System.in);
 		int n = in.nextInt();
 		String s = "";
