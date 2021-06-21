@@ -3,9 +3,8 @@ import java.util.Arrays;
 public class SortingAscending {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		int[] nums = new int[] {5,3,1,2};
-		System.out.println(Arrays.toString(sortArray(nums)));
+		int[] nums = new int[] {5,3,1,2,4,8,6};
+		System.out.println(Arrays.toString(sortArrayOn(nums)));
 	}
 	
 	public static int[] sortArray(int[] nums) {
@@ -20,5 +19,22 @@ public class SortingAscending {
         }
         return nums;
     }
+	
+	public static int[] sortArrayOn(int[] nums) {
+		
+		for(int i=0,j =i+1; i<nums.length && j<nums.length;) {
+			if(nums[i] > nums[j]) {
+				int temp = nums[i];
+				nums[i] = nums[j];
+				nums[j] = temp;
+				i=0;
+				j=i+1;
+			}else {
+				i++;
+				j++;
+			}
+		}
+		return nums;
+	}
 
 }
