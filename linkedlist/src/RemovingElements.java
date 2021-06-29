@@ -26,10 +26,7 @@ public class RemovingElements {
 	        prev = dummy;
 	        
 	        while(current != null){
-	            if(current.val == val && current == head){
-	                prev.next = current.next;
-	                current = current.next;
-	            }else if(current.val == val){
+	            if(current.val == val){
 	                prev.next = current.next;
 	                current = current.next;
 	            }else{
