@@ -7,6 +7,6 @@ public int calculateTime(String keyboard, String word) {
             sum = sum + dup;
         }
         return sum;
-    }
+  }
 
 	
