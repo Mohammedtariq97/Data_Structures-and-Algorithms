@@ -1,0 +1,12 @@
+public int maximum69Number (int num) {
+        char[] charArr = Integer.toString(num).toCharArray();
+        for(int i=0;i<charArr.length;i++){
+            if(charArr[i] == '6'){
+                charArr[i] = '9';
+                break;
+            }
+        }
+        return Integer.parseInt(new String(charArr));
+    }
+
+	
